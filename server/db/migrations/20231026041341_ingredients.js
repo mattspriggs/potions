@@ -8,7 +8,7 @@ export async function up(knex) {
     table.string('ingredients_name')
     table.string('ingredients_description')
     table.string('ingredients_image_url')
-    table.string('ingredients.blender_id')
+    table.string('ingredients_blender_id')
   })
 }
 

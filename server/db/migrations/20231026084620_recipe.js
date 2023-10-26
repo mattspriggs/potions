@@ -3,7 +3,7 @@
  * @returns { Promise<void> }
  */
 export async function up(knex) {
-  await knex.createTable('recipe', (table) => {
+  await knex.schema.createTable('recipe', (table) => {
     table.integer('recipe_cauldron_id')
     table.integer('recipe_ingredients_id')
     table.integer('recipe_ingredients_qty')
