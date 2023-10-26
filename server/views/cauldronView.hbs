@@ -1,0 +1,12 @@
+<div class="container">
+{{#each cauldrons}}
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{cauldrons_image_url}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{cauldrons_name}}</h5>
+    <p class="card-text">{{cauldrons_description}}</p>
+    <a href="/cauldrons/{{cauldrons_name}}" class="btn btn-primary">Get Brewing</a>
+  </div>
+</div>
+{{/each}}
+</div>
