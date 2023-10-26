@@ -25,7 +25,7 @@ export async function seed(knex) {
       cauldron_description: 'rowValue3',
     },
     {
-      cauldron_id: 1,
+      cauldron_id: 4,
       cauldron_name: 'DaviD',
       cauldron_image_url: 'rowValue2',
       cauldron_description: 'rowValue3',
