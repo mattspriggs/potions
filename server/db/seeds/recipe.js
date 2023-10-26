@@ -9,20 +9,20 @@ export async function seed(knex) {
     {
       id: 1,
       recipe_cauldron_id: 'rowValue1',
-      recipe_ingredients_id: 'rowValue1',
-      recipe_ingredients_qty: 'rowValue1',
+      recipe_ingredients_id: 'rowValue2',
+      recipe_ingredients_qty: 'rowValue3',
     },
     {
       id: 2,
       recipe_cauldron_id: 'rowValue1',
-      recipe_ingredients_id: 'rowValue1',
-      recipe_ingredients_qty: 'rowValue1',
+      recipe_ingredients_id: 'rowValue2',
+      recipe_ingredients_qty: 'rowValue3',
     },
     {
       id: 3,
       recipe_cauldron_id: 'rowValue1',
-      recipe_ingredients_id: 'rowValue1',
-      recipe_ingredients_qty: 'rowValue1',
+      recipe_ingredients_id: 'rowValue2',
+      recipe_ingredients_qty: 'rowValue3',
     },
   ])
 }
