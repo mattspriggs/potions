@@ -7,28 +7,28 @@ export async function seed(knex) {
   await knex('cauldrons').del()
   await knex('cauldrons').insert([
     {
-      cauldron_id: 1,
-      cauldron_name: 'Jatin',
-      cauldron_image_url: 'rowValue2',
-      cauldron_description: 'rowValue3',
+      cauldrons_id: 1,
+      cauldrons_name: 'Jatin',
+      cauldrons_image_url: 'rowValue2',
+      cauldrons_description: 'rowValue3',
     },
     {
-      cauldron_id: 2,
-      cauldron_name: 'David',
-      cauldron_image_url: 'rowValue2',
-      cauldron_description: 'rowValue3',
+      cauldrons_id: 2,
+      cauldrons_name: 'David',
+      cauldrons_image_url: 'rowValue2',
+      cauldrons_description: 'rowValue3',
     },
     {
-      cauldron_id: 3,
-      cauldron_name: 'Jen',
-      cauldron_image_url: 'rowValue2',
-      cauldron_description: 'rowValue3',
+      cauldrons_id: 3,
+      cauldrons_name: 'Jen',
+      cauldrons_image_url: 'rowValue2',
+      cauldrons_description: 'rowValue3',
     },
     {
-      cauldron_id: 4,
-      cauldron_name: 'DaviD',
-      cauldron_image_url: 'rowValue2',
-      cauldron_description: 'rowValue3',
+      cauldrons_id: 4,
+      cauldrons_name: 'DaviD',
+      cauldrons_image_url: 'rowValue2',
+      cauldrons_description: 'rowValue3',
     },
   ])
 }

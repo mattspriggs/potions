@@ -3,9 +3,9 @@
  * @returns { Promise<void> }
  */
 export async function up(knex) {
-  await knex.schema.createTable('method', (table) => {
-    table.integer('method_cauldron_id')
-    table.specificType('method_name', 'text ARRAY')
+  await knex.schema.createTable('methods', (table) => {
+    table.integer('methods_cauldron_id')
+    table.specificType('methods_name', 'text ARRAY')
   })
 }
 
@@ -14,5 +14,5 @@ export async function up(knex) {
  * @returns { Promise<void> }
  */
 export async function down(knex) {
-  await knex.schema.dropTable('method')
+  await knex.schema.dropTable('methods')
 }
