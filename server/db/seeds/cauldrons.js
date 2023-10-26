@@ -1,13 +1,34 @@
 /**
  * @param { import("knex").Knex } knex
- * @returns { Promise<void> } 
+ * @returns { Promise<void> }
  */
-exports.seed = async function(knex) {
+export async function seed(knex) {
   // Deletes ALL existing entries
-  await knex('table_name').del()
-  await knex('table_name').insert([
-    {id: 1, colName: 'rowValue1'},
-    {id: 2, colName: 'rowValue2'},
-    {id: 3, colName: 'rowValue3'}
-  ]);
-};
+  await knex('cauldrons').del()
+  await knex('cauldrons').insert([
+    {
+      cauldron_id: 1,
+      cauldron_name: 'Jatin',
+      cauldron_image_url: 'rowValue2',
+      cauldron_description: 'rowValue3',
+    },
+    {
+      cauldron_id: 2,
+      cauldron_name: 'David',
+      cauldron_image_url: 'rowValue2',
+      cauldron_description: 'rowValue3',
+    },
+    {
+      cauldron_id: 3,
+      cauldron_name: 'Jen',
+      cauldron_image_url: 'rowValue2',
+      cauldron_description: 'rowValue3',
+    },
+    {
+      cauldron_id: 1,
+      cauldron_name: 'DaviD',
+      cauldron_image_url: 'rowValue2',
+      cauldron_description: 'rowValue3',
+    },
+  ])
+}
