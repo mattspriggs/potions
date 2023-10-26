@@ -2,14 +2,10 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.up = function(knex) {
-  
-};
+export function up(knex) {}
 
 /**
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.down = function(knex) {
-  
-};
+export function down(knex) {}
