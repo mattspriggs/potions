@@ -5,7 +5,7 @@
 export async function up(knex) {
   await knex.schema.createTable('methods', (table) => {
     table.integer('methods_cauldron_id')
-    table.specificType('methods_name', 'text ARRAY')
+    table.string('methods_name')
   })
 }
 
